@@ -275,10 +275,10 @@ register struct comp *cp;
 int paren;			/* Parenthesized? */
 int *flagp;
 {
-	register char *ret;
-	register char *br;
-	register char *ender;
-	register int parno;
+	register char *ret=NULL;
+	register char *br=NULL;
+	register char *ender=NULL;
+	register int parno=0;
 	int flags;
 
 	*flagp = HASWIDTH;	/* Tentatively. */
@@ -345,10 +345,10 @@ regexp_info *ri;
 register struct comp *cp;
 int *flagp;
 {
-	register char *ret;
-	register char *chain;
-	register char *latest;
-	int flags;
+	register char *ret=NULL;
+	register char *chain=NULL;
+	register char *latest=NULL;
+	int flags=0;
 	register int c;
 
 	*flagp = WORST;				/* Tentatively. */
